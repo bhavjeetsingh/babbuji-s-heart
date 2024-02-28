@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>babbuji's heart</title>
+    <style>
+        body {
+            background-color:wheat;
+           
+        }
+        .heart {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            
+            margin: 100px;
+            animation: beat 1s infinite alternate
+            
+            
+        }
+
+        .heart:before,
+        .heart:after {
+            content: '';
+            background-color: red;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        .heart:after {
+            left: 50%;
+            top: 0px;
+        }
+        .heart:before {
+            left: -0;
+            top: -50%;
+        }
+        @keyframes beat {
+            0% {
+            transform: scale(1) rotate(-45deg);
+            }
+            100% {
+                transform: scale(1.1) rotate(-45deg);
+            }
+            
+        }
+        .babbu {
+           margin-left: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <audio controls autoplay src="./Ei Raat Tomar Amar - (Raag.Fm) (3).mp3"></audio>
+    <p>This heart will always beat for my love, kajju.<br>
+        <span class="babbu">-babbu</span>
+    </p>
+</body>
+</html>
